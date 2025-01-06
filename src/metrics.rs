@@ -431,8 +431,8 @@ impl Sampler {
     let ane_avg_wr_bw = rs.ane_bw_wr_hist.weighted_average_gbps("ane_avg_wr_bw");
     let sys_rd_bw = rs.sys_rd_bw_hist.weighted_average_gbps("sys_rd_bw");
     let sys_rw_bw = rs.sys_rw_bw_hist.weighted_average_gbps("sys_rw_bw");
-    let floor_rd_avg_bw = rs.floor_rd_bw_hist.weighted_average_gbps("floor_rd_avg_bw");
-    let floor_rw_avg_bw = rs.floor_rw_bw_hist.weighted_average_gbps("floor_rw_avg_bw");
+    let floor_rd_avg_bw = 0.0; //rs.floor_rd_bw_hist.weighted_average_gbps("floor_rd_avg_bw");
+    let floor_rw_avg_bw = 0.0; //rs.floor_rw_bw_hist.weighted_average_gbps("floor_rw_avg_bw");
     //if rs.ane_rd_bw == 0 {
     //  rs.ane_rd_bw = (avg_bw * 1024.0 * 1024.0 * 1024.0) as u64; // Convert GB/s to B/s
     //}
